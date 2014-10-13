@@ -22,6 +22,14 @@
 		544AAAD618D63D76002AD3F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544AAAB518D63D76002AD3F0 /* UIKit.framework */; };
 		544AAADE18D63D76002AD3F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 544AAADC18D63D76002AD3F0 /* InfoPlist.strings */; };
 		544AAAE018D63D76002AD3F0 /* MinesweeperAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 544AAADF18D63D76002AD3F0 /* MinesweeperAppTests.m */; };
+		544AAAEE18D64861002AD3F0 /* Minesweeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 544AAAED18D64861002AD3F0 /* Minesweeper.m */; };
+		544AAAF218D649A9002AD3F0 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 544AAAEF18D649A9002AD3F0 /* block.png */; };
+		544AAAF318D649A9002AD3F0 /* Flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 544AAAF018D649A9002AD3F0 /* Flag.png */; };
+		544AAAF418D649A9002AD3F0 /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = 544AAAF118D649A9002AD3F0 /* mine.png */; };
+		54F6DAA118D82A5000A72E48 /* App-29*29.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F6DA9E18D82A5000A72E48 /* App-29*29.png */; };
+		54F6DAA218D82A5000A72E48 /* App-40*40.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F6DA9F18D82A5000A72E48 /* App-40*40.png */; };
+		54F6DAA318D82A5000A72E48 /* App-60*60.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F6DAA018D82A5000A72E48 /* App-60*60.png */; };
+		C3AB201919EC4E7E00DB3D20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3AB201819EC4E7E00DB3D20 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,15 @@
 		544AAADB18D63D76002AD3F0 /* MinesweeperAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MinesweeperAppTests-Info.plist"; sourceTree = "<group>"; };
 		544AAADD18D63D76002AD3F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		544AAADF18D63D76002AD3F0 /* MinesweeperAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinesweeperAppTests.m; sourceTree = "<group>"; };
+		544AAAEC18D64861002AD3F0 /* Minesweeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minesweeper.h; sourceTree = "<group>"; };
+		544AAAED18D64861002AD3F0 /* Minesweeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Minesweeper.m; sourceTree = "<group>"; };
+		544AAAEF18D649A9002AD3F0 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = SOURCE_ROOT; };
+		544AAAF018D649A9002AD3F0 /* Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flag.png; sourceTree = SOURCE_ROOT; };
+		544AAAF118D649A9002AD3F0 /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine.png; sourceTree = SOURCE_ROOT; };
+		54F6DA9E18D82A5000A72E48 /* App-29*29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-29*29.png"; sourceTree = SOURCE_ROOT; };
+		54F6DA9F18D82A5000A72E48 /* App-40*40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-40*40.png"; sourceTree = SOURCE_ROOT; };
+		54F6DAA018D82A5000A72E48 /* App-60*60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App-60*60.png"; sourceTree = SOURCE_ROOT; };
+		C3AB201819EC4E7E00DB3D20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +102,7 @@
 		544AAAA518D63D75002AD3F0 = {
 			isa = PBXGroup;
 			children = (
+				C3AB201819EC4E7E00DB3D20 /* Default-568h@2x.png */,
 				544AAAB718D63D76002AD3F0 /* MinesweeperApp */,
 				544AAAD918D63D76002AD3F0 /* MinesweeperAppTests */,
 				544AAAB018D63D76002AD3F0 /* Frameworks */,
@@ -122,6 +140,8 @@
 				544AAAC718D63D76002AD3F0 /* FirstViewController.m */,
 				544AAAC918D63D76002AD3F0 /* SecondViewController.h */,
 				544AAACA18D63D76002AD3F0 /* SecondViewController.m */,
+				544AAAEC18D64861002AD3F0 /* Minesweeper.h */,
+				544AAAED18D64861002AD3F0 /* Minesweeper.m */,
 				544AAACC18D63D76002AD3F0 /* Images.xcassets */,
 				544AAAB818D63D76002AD3F0 /* Supporting Files */,
 			);
@@ -131,6 +151,12 @@
 		544AAAB818D63D76002AD3F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54F6DA9E18D82A5000A72E48 /* App-29*29.png */,
+				54F6DA9F18D82A5000A72E48 /* App-40*40.png */,
+				54F6DAA018D82A5000A72E48 /* App-60*60.png */,
+				544AAAEF18D649A9002AD3F0 /* block.png */,
+				544AAAF018D649A9002AD3F0 /* Flag.png */,
+				544AAAF118D649A9002AD3F0 /* mine.png */,
 				544AAAB918D63D76002AD3F0 /* MinesweeperApp-Info.plist */,
 				544AAABA18D63D76002AD3F0 /* InfoPlist.strings */,
 				544AAABD18D63D76002AD3F0 /* main.m */,
@@ -201,7 +227,7 @@
 		544AAAA618D63D75002AD3F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Rahath Cherukuri";
 				TargetAttributes = {
 					544AAAD118D63D76002AD3F0 = {
@@ -233,9 +259,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F6DAA218D82A5000A72E48 /* App-40*40.png in Resources */,
 				544AAACD18D63D76002AD3F0 /* Images.xcassets in Resources */,
+				54F6DAA318D82A5000A72E48 /* App-60*60.png in Resources */,
+				C3AB201919EC4E7E00DB3D20 /* Default-568h@2x.png in Resources */,
 				544AAABC18D63D76002AD3F0 /* InfoPlist.strings in Resources */,
+				544AAAF418D649A9002AD3F0 /* mine.png in Resources */,
+				54F6DAA118D82A5000A72E48 /* App-29*29.png in Resources */,
+				544AAAF318D649A9002AD3F0 /* Flag.png in Resources */,
 				544AAAC518D63D76002AD3F0 /* Main.storyboard in Resources */,
+				544AAAF218D649A9002AD3F0 /* block.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +289,7 @@
 			files = (
 				544AAACB18D63D76002AD3F0 /* SecondViewController.m in Sources */,
 				544AAAC218D63D76002AD3F0 /* AppDelegate.m in Sources */,
+				544AAAEE18D64861002AD3F0 /* Minesweeper.m in Sources */,
 				544AAAC818D63D76002AD3F0 /* FirstViewController.m in Sources */,
 				544AAABE18D63D76002AD3F0 /* main.m in Sources */,
 			);
@@ -311,7 +345,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -350,7 +383,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -382,8 +414,6 @@
 		544AAAE418D63D76002AD3F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinesweeperApp/MinesweeperApp-Prefix.pch";
 				INFOPLIST_FILE = "MinesweeperApp/MinesweeperApp-Info.plist";
@@ -395,8 +425,6 @@
 		544AAAE518D63D76002AD3F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinesweeperApp/MinesweeperApp-Prefix.pch";
 				INFOPLIST_FILE = "MinesweeperApp/MinesweeperApp-Info.plist";
@@ -408,7 +436,6 @@
 		544AAAE718D63D76002AD3F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MinesweeperApp.app/MinesweeperApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -431,7 +458,6 @@
 		544AAAE818D63D76002AD3F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MinesweeperApp.app/MinesweeperApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -466,6 +492,7 @@
 				544AAAE518D63D76002AD3F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		544AAAE618D63D76002AD3F0 /* Build configuration list for PBXNativeTarget "MinesweeperAppTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +501,7 @@
 				544AAAE818D63D76002AD3F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

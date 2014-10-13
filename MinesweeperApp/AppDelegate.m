@@ -5,16 +5,26 @@
 //  Created by Rahath Cherukuri on 3/16/14.
 //  Copyright (c) 2014 Rahath Cherukuri. All rights reserved.
 //
+//
 
 #import "AppDelegate.h"
+#import "FirstViewController.h"
 
 @implementation AppDelegate
 
+@synthesize window = _window;
+@synthesize viewController = _viewController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [window addSubview:viewController.view];
+    [window makeKeyAndVisible];
     return YES;
 }
+
+@end
+
+/*
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -44,3 +54,4 @@
 }
 
 @end
+*/
