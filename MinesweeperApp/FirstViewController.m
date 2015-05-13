@@ -8,7 +8,7 @@
 //
 
 #import "FirstViewController.h"
-#import "Minesweeper.h"
+
 @interface FirstViewController ()
 @property (strong,nonatomic) Minesweeper *minesweeper;
 @end

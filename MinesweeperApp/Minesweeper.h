@@ -16,11 +16,17 @@
 @property (nonatomic, assign) int col;
 @property (nonatomic, assign) CGFloat dw;
 @property (nonatomic, assign) CGFloat dh;
+
 @property (nonatomic,assign) IBOutlet UILabel *seconds;
 @property (nonatomic,assign) IBOutlet UILabel *BestTime;
 @property (nonatomic,assign) IBOutlet UILabel * MineDisplayer;
+
 -(void) initializeMatrix;
 -(void) checkSurroundings: (int) r andArg: (int)c;
+-(int)noOfMineswithrows: (int)noofrows andcolumns:(int)noofcols;
+
+- (void) tapSingleHandler: (UITapGestureRecognizer *) sender;
+- (void) tapDoubleHandler: (UITapGestureRecognizer *) sender;
 
 @end
 

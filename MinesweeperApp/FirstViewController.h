@@ -9,7 +9,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Minesweeper.h"
 
 @interface FirstViewController : UIViewController
+
+- (Minesweeper *)minesweeper;
 
 @end

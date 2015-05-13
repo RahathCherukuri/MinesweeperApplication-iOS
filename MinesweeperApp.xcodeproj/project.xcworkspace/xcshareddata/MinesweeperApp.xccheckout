@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>10FB3D90-FB42-4D5D-A28F-845B3EBE435D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MinesweeperApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A39006C8BCABD73C5F07E0B6D3B5B798900C6CD</key>
+		<string>https://github.com/RahathCherukuri/MinesweeperApplication-iOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MinesweeperApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A39006C8BCABD73C5F07E0B6D3B5B798900C6CD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RahathCherukuri/MinesweeperApplication-iOS</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A39006C8BCABD73C5F07E0B6D3B5B798900C6CD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A39006C8BCABD73C5F07E0B6D3B5B798900C6CD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MinesweeperApplication-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

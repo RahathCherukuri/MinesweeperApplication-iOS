@@ -60,19 +60,17 @@ int noofcols;
 int dmine=0;
 
 
-
 //Initialized in the draw rect method
 -(void) initializeMatrix
 {
     timercount=0;
-
     firstTime= TRUE;
     lostGame= false;
     int count=0;
     clickedCol=-10;
     clickedRow=-10;
-    noofrows=[[NSUserDefaults standardUserDefaults] integerForKey:@"rStepper"];
-    noofcols= [[NSUserDefaults standardUserDefaults] integerForKey:@"cStepper"];
+    noofrows=(int)[[NSUserDefaults standardUserDefaults] integerForKey:@"rStepper"];
+    noofcols= (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"cStepper"];
     if(noofrows==0 && noofcols==0)//Initially when the application is started in a different machine
     {
         noofrows=10;
@@ -82,7 +80,8 @@ int dmine=0;
         [[NSUserDefaults standardUserDefaults]synchronize];
     }
     //caliculates the percentage of mines
-    int noofmines= (noofrows*noofcols)/5;
+    //int noofmines= (noofrows*noofcols)/5;
+    int noofmines = [self noOfMineswithrows:noofrows andcolumns:noofcols];
     for(int i=0;i <noofcols;i++)
     {
         for(int j=0;j<noofrows;j++)
@@ -124,16 +123,20 @@ int dmine=0;
             Matrix1[i][j]= Matrix[i][j];
         }
     }
-    
 }
 
+-(int)noOfMineswithrows: (int)noofrows andcolumns:(int)noofcols
+{
+    int noofmines= (noofrows*noofcols)/5;
+    return noofmines;
+}
 
 /*-(void) TimerFunction
-{
-    [timer invalidate];
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countDown) userInfo:nil repeats:YES];
-}
-*/
+ {
+ [timer invalidate];
+ [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(countDown) userInfo:nil repeats:YES];
+ }
+ */
 //Set the label that has timer.
 -(void)countDown
 {
@@ -156,8 +159,8 @@ int dmine=0;
     NSInteger btime= [[NSUserDefaults standardUserDefaults] integerForKey:@"hScore"];
     //btime= 100;
     //NSLog( @"Minesweeper/drawRect() here=============" );
-    NSLog(@"%i",btime);
-    self.BestTime.text= [NSString stringWithFormat:@"%d",btime];
+    //NSLog(@"%i",btime);
+    self.BestTime.text= [NSString stringWithFormat:@"%ld",(long)btime];
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGRect bounds = [self bounds];        // get bounds of rectangle about owning view
     CGFloat w = CGRectGetWidth(bounds);   // w = width of bounds rectangle
@@ -171,11 +174,9 @@ int dmine=0;
     self.dh= (h-150)/rowcount;
     //self.dh= (h)/rowcount;
     NSLog( @"Minesweeper/drawRect() here" );
-  
+    
     [[UIColor grayColor] setStroke];
     
-    
- 
     for ( int i = 0;  i < noofrows+1;  ++i )//horizontal lines
     {
         CGContextMoveToPoint( context, 0, i*self.dh+downValue);
@@ -221,7 +222,7 @@ int dmine=0;
             [[UIColor blackColor] setFill];
             UIRectFrame(imageRect);
         }
-    } 
+    }
     
     
     //[self TimerFunction];
@@ -236,8 +237,8 @@ int dmine=0;
      NSString *s= @"$";
      CGPoint xy = { 1.75+i*self.dw, downValue + j*self.dh };//--------------------here
      [s drawAtPoint: xy withFont: font];*/
-     
-     /*UIImage *img = [UIImage imageNamed:@"mine"];
+    
+    /*UIImage *img = [UIImage imageNamed:@"mine"];
      CGPoint xy = { 1.75+i*self.dw, downValue + j*self.dh };
      CGRect imageRect = CGRectMake(xy.x, xy.y, self.dw, self.dh);
      [img drawInRect:imageRect];
@@ -366,12 +367,12 @@ int dmine=0;
             }
             
             /*if(dmine>=0)
-            {
-                    if(Matrix1[self.row][self.col]==-2)
-                    {
-                        dmine--;
-                    }
-            }*/
+             {
+             if(Matrix1[self.row][self.col]==-2)
+             {
+             dmine--;
+             }
+             }*/
             
             //we change the values in dupmatrix
             for(int i=0;i<noofcols;i++)
@@ -399,7 +400,7 @@ int dmine=0;
             if(won==0)//here the game is won
             {
                 int newHighScore= timercount;
-                int highscore=[[NSUserDefaults standardUserDefaults] integerForKey:@"hScore"];
+                int highscore=(int)[[NSUserDefaults standardUserDefaults] integerForKey:@"hScore"];
                 if(highscore== 0)
                 {
                     highscore=10000;
@@ -424,13 +425,13 @@ int dmine=0;
                 }
                 if(newHighScore>highscore)
                 {
-                lostGame= TRUE;
+                    lostGame= TRUE;
                     //[[NSUserDefaults standardUserDefaults] setInteger:highscore forKey:@"hScore"];
-                UIAlertView *message1= [[UIAlertView alloc]initWithTitle:@"YOU WON!!" message:@"Start Again" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-                [message1 show];
-                //[self initializeAgain];
-                [self setNeedsDisplay];
-                //[[NSUserDefaults standardUserDefaults] setInteger:100 forKey:@"hScore"];
+                    UIAlertView *message1= [[UIAlertView alloc]initWithTitle:@"YOU WON!!" message:@"Start Again" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                    [message1 show];
+                    //[self initializeAgain];
+                    [self setNeedsDisplay];
+                    //[[NSUserDefaults standardUserDefaults] setInteger:100 forKey:@"hScore"];
                 }
             }
             else
@@ -450,8 +451,8 @@ int dmine=0;
     lostGame= false;
     //singleTap= FALSE;
     int count1=0;
-    noofrows=[[NSUserDefaults standardUserDefaults] integerForKey:@"rStepper"];
-    noofcols= [[NSUserDefaults standardUserDefaults] integerForKey:@"cStepper"];
+    noofrows=(int)[[NSUserDefaults standardUserDefaults] integerForKey:@"rStepper"];
+    noofcols= (int)[[NSUserDefaults standardUserDefaults] integerForKey:@"cStepper"];
     int noofmines= (noofrows*noofcols)/5;
     for(int i=0;i <noofcols;i++)
     {
